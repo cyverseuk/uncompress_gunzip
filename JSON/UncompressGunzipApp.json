@@ -1,0 +1,33 @@
+{
+  "name": "uncompress_gunzip",
+  "label": "Uncompress files with gunzip",
+  "shortDescription": "application to uncompress file(s) with gunzip",
+  "longDescription": "",
+  "helpURI": "https://github.com/cyverseuk/uncompress_gunzip",
+  "datePublished": "",
+  "author":"Alice Minotto",
+  "version": "0.0.0",
+  "deploymentSystem": "cyverseUK-Storage2",
+  "deploymentPath": "/mnt/data/apps/uncompress_gunzip",
+  "executionSystem": "cyverseUK-Batch2",
+  "executionType": "CLI",
+  "parallelism": "SERIAL",
+  "templatePath": "wrapper.sh",
+  "testPath": "test.sh",
+  "ontology": [ "http://edamontology.org/operation_2409",
+  "http://edamontology.org/topic_3366"],
+  "tags": [ "CyverseUK" ],
+  "inputs": [
+    {"id": "files",
+    "value": {
+      "required": true,
+      "default": ""
+    },
+    "details": { "label": "Input file(s)",
+      "showArgument": false
+    },
+    "semantics": {
+      "maxCardinality": -1
+    }}
+    ]
+}
